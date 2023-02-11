@@ -1,0 +1,32 @@
+.navbar {
+  background-color: #273036;
+}
+
+.jumbotron {
+  padding-top: 6rem;
+  background-color: #ffe6aa;
+}
+
+#aboutMe {
+  padding-top: 0rem;
+  background-color: #273036;
+}
+
+#projects {
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+  background-color: #ffe6aa;
+}
+
+.banner {
+  background: url("https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2018/11/dark-wallpapers.jpg")
+    no-repeat center center;
+  background-size: cover;
+  padding-top: 6rem;
+  padding-bottom: 10%;
+  color: #fff;
+}
+
+footer {
+  background-color: #ffe6aa;
+}
