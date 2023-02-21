@@ -77,3 +77,32 @@ const NavigationBar = () => {
 };
 
 export default NavigationBar;
+
+// import Container from "./Container";
+// import Nav from "react-bootstrap/Nav";
+// import Navbar from "react-bootstrap/Navbar";
+
+// function NavScrollExample() {
+//   return (
+//     <Navbar bg="dark" variant="dark" expand="lg" fixed="top">
+//       <Container fluid>
+//         <Navbar.Brand href="#">IhzhaNB</Navbar.Brand>
+//         <Navbar.Toggle aria-controls="navbarScroll" />
+//         <Navbar.Collapse id="navbarScroll">
+//           <Nav
+//             className="justify-content-end flex-grow-1 pe-3"
+//             style={{ maxHeight: "100px" }}
+//             navbarScroll
+//           >
+//             <Nav.Link href="#home">Home</Nav.Link>
+//             <Nav.Link href="#aboutMe">About Me</Nav.Link>
+//             <Nav.Link href="#projects">Projects</Nav.Link>
+//             <Nav.Link href="#contac">Contac</Nav.Link>
+//           </Nav>
+//         </Navbar.Collapse>
+//       </Container>
+//     </Navbar>
+//   );
+// }
+
+// export default NavScrollExample;

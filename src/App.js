@@ -1,28 +1,16 @@
 import "./App.css";
+import Newreg from "./components/secondtask/Newreg";
 import "bootstrap/dist/css/bootstrap.min.css";
-import NavigationBar from "./components/NavigationBar";
-import Jumbotron from "./components/Jumbotron";
-import AboutMe from "./components/AboutMe";
-import Projects from "./components/Projects";
-import Contac from "./components/Contac";
-import Footer from "./components/Footer";
+// import Register from "./components/secondtask/Register";
+// import Validation from "./components/secondtask/Validation";
 
 function App() {
   return (
     <>
       <div className="App">
-        {/* <!-- Navigation--> */}
-        <NavigationBar />
-        {/* <!-- Jumbotron --> */}
-        <Jumbotron />
-        {/* <!-- AboutMe --> */}
-        <AboutMe />
-        {/* <!-- Projects --> */}
-        <Projects />
-        {/* <!-- Contac --> */}
-        <Contac />
-        {/* <!-- Footer --> */}
-        <Footer />
+        {/* <Register nama="ihzha" /> */}
+        {/* <Validation /> */}
+        <Newreg />
       </div>
     </>
   );
