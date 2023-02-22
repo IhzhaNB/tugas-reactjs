@@ -19,7 +19,7 @@ class Newsapi extends Component {
 
   fetchData(searchTerm) {
     fetch(
-      `https://newsapi.org/v2/everything?q=${searchTerm}&from=2023-02-22&sortBy=popularity&apiKey=9e34af2d52d84141ab2f40e46ce31891`
+      `https://gnews.io/api/v4/search?q=${searchTerm}&lang=en&country=us&max=10&apikey=de6c315e52d7534595e6734df65e360c`
     )
       .then((response) => {
         if (response.ok) {
@@ -78,22 +78,20 @@ class Newsapi extends Component {
             </Button>
           </Form>
         </Container>
-        <Container>
-          <Row>
-            {articles.map((article) => (
-              <Col className="md-4 my-5">
-                <Card style={{ width: "18rem" }} key={article.title}>
-                  <Card.Img variant="top" src={article.urlToImage} />
-                  <Card.Body>
-                    <Card.Title>{article.image}</Card.Title>
-                    <Card.Text>{article.description}</Card.Text>
-                    <a href={article.url}>Show Detail</a>
-                  </Card.Body>
-                </Card>
-              </Col>
-            ))}
-          </Row>
-        </Container>
+        <Row>
+          {articles.map((article) => (
+            <Col className="md-4 my-5">
+              <Card style={{ width: "18rem" }} key={article.title}>
+                <Card.Img variant="top" src={article.image} />
+                <Card.Body>
+                  <Card.Title>{article.title}</Card.Title>
+                  <Card.Text>{article.description}</Card.Text>
+                  <a href={article.url}>Show Detail</a>
+                </Card.Body>
+              </Card>
+            </Col>
+          ))}
+        </Row>
       </>
     );
   }
